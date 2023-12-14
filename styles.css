@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background-color: #f2f2f2;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#gameBoard {
+  width: 400px;
+  height: 400px;
+  background-color: #111;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+#scoreBoard {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+#startBtn,
+#restartBtn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#startBtn:hover,
+#restartBtn:hover {
+  background-color: #555;
+}
+#score-board {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 10px;
+  font-weight: 600;
+}
+#game-message {
+  width: 380px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.snake {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.food {
+  background-color: rgb(0, 128, 58);
+}
